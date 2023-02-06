@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import { Box, Stack } from '@mui/system';
 import { VolumeDown } from '@mui/icons-material';
 import Slider from '@mui/material/Slider';
@@ -17,7 +17,7 @@ const Player = () => {
     minWidth:300,
     minHeight:200
 }}>
-  <Typography variant='h2'>
+  <Typography variant='h2' >
     Mrinal Singha
   </Typography>
   <Stack spacing={2} direction="row" sx={{ mb: 1 }} alignItems="center">
@@ -26,6 +26,16 @@ const Player = () => {
 <VolumeUp />
 </Stack>
 </Card>
+<Box sx={{ width:300,height:400, background:'black' ,p:4, m:4 , fontSize:20}}>
+  <Typography variant='h2' color='#fff'sx={{gap:2,boxShadow:1}}>
+    This is to try out the box in material ui components
+    </Typography>
+</Box>
+<Box p='2' m='2'>
+  <Grid xs={6} md={4} width='20' bgcolor='black' p='3' m='3'>
+    1
+  </Grid>
+</Box>
    </>
   )
 }
